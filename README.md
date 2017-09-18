@@ -13,7 +13,7 @@ The task is to learn the representations of the vertices from a given network.
 
 # Paper to read 
 
-**Multi-view Network Embedding**
+**Multi-view Network Embedding** used for multigraph regularization
 
 Learning Distributed Node Representations for Networks with Multiple Views, CIKM'17
 
