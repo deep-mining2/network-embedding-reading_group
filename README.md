@@ -17,6 +17,26 @@ The task is to learn the representations of the vertices from a given network.
 
 Learning Distributed Node Representations for Networks with Multiple Views, CIKM'17
 
+**Networks with node attributes**
+
+-Networks with text information
+
+Network representation learning with reich text information IJCAI'15
+
+-Networks with attributes
+
+Attributed social network embedding arXiv'17
+
+-Variational graph autoencoders
+
+Variational Graph Auto-encoders NIPS Workshop 16
+
+**Heterogeneous networks**
+
+
+**Task-specific network embedding**
+
+
 # Interesting paper about learning node representations of networks
 
 **Leverage global structural inforation**
