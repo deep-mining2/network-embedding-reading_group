@@ -11,7 +11,7 @@ The task is to learn the representations of the vertices from a given network.
 
 <img src="http://cherry.cs.nccu.edu.tw/~g10018/portfolio/images/NE.png" width="480">
 
-# Paper to read 
+# Interesting paper about learning node representations of networks
 
 **Multi-view Network Embedding** used for multigraph regularization
 
@@ -51,8 +51,6 @@ PTE: Predictive Tesxt Embedding through Large-scale Heterogeneous Text Network K
 
 Semi-supervised Classification with Graph Convolutional Networks ICLR'17
 
-# Interesting paper about learning node representations of networks
-
 **Leverage global structural inforation**
 
 GraphRep: Learning graph representation with global structural information CIKM'15
@@ -68,6 +66,8 @@ Asymmetric transitivity preserving graph embedding KDD'16
 **Signed network embedding**
 
 Signed netowrk embedding in social media SDM'17
+
+# Interesting paper about learning representations of Entire networks
 
 # Paper References with the implementation(s)
 
