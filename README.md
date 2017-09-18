@@ -11,6 +11,30 @@ The task is to learn the representations of the vertices from a given network.
 
 <img src="http://cherry.cs.nccu.edu.tw/~g10018/portfolio/images/NE.png" width="480">
 
+# Paper to read 
+
+**Multi-view Network Embedding**
+
+Learning Distributed Node Representations for Networks with Multiple Views, CIKM'17
+
+# Interesting paper about learning node representations of networks
+
+**Leverage global structural inforation**
+
+GraphRep: Learning graph representation with global structural information CIKM'15
+
+**Non-linear methods based on autoencoder**
+
+Structural deep network embedding KDD'16
+
+**Directed network embedding**
+
+Asymmetric transitivity preserving graph embedding KDD'16
+
+**Signed network embedding**
+
+Signed netowrk embedding in social media SDM'17
+
 # Paper References with the implementation(s)
 
 **StarSpace**
