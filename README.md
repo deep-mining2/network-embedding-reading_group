@@ -33,9 +33,23 @@ Variational Graph Auto-encoders NIPS Workshop 16
 
 **Heterogeneous networks**
 
+-Heterogeneous Network Embedding via Deep Architectures 
+
+Heterogeneous Network Embedding via Deep Architectures KDD'15
+
+-Heterogeneous Star Network Embedding
+
+Task-Guided and Path-Augmented Heterogeneous Network Embedding for Author Identification WSDM'17
 
 **Task-specific network embedding**
 
+-Semi-supervised Text Representation
+
+PTE: Predictive Tesxt Embedding through Large-scale Heterogeneous Text Network KDD'15
+
+-Semi-supervised Classification with Graph Convolutional Networks
+
+Semi-supervised Classification with Graph Convolutional Networks ICLR'17
 
 # Interesting paper about learning node representations of networks
 
