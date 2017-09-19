@@ -13,6 +13,14 @@ The task is to learn the representations of the vertices from a given network.
 
 # Interesting paper about learning node representations of networks
 
+**Lapalcian Eigenmap**
+
+**Graph Factorization**
+
+**Neural word embedding: Word2Vec**
+
+**LINE, DeepWalk, Node2Vec
+
 **Multi-view Network Embedding** used for multigraph regularization
 
 Learning Distributed Node Representations for Networks with Multiple Views, CIKM'17
@@ -68,6 +76,8 @@ Asymmetric transitivity preserving graph embedding KDD'16
 Signed netowrk embedding in social media SDM'17
 
 # Interesting paper about learning representations of Entire networks
+
+**Graph Kernels**
 
 **End-to-end method**
 
