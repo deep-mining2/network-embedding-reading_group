@@ -19,35 +19,35 @@ Learning Distributed Node Representations for Networks with Multiple Views, CIKM
 
 **Networks with node attributes**
 
--Networks with text information
+--Networks with text information
 
 Network representation learning with reich text information IJCAI'15
 
--Networks with attributes
+--Networks with attributes
 
 Attributed social network embedding arXiv'17
 
--Variational graph autoencoders
+--Variational graph autoencoders
 
 Variational Graph Auto-encoders NIPS Workshop 16
 
 **Heterogeneous networks**
 
--Heterogeneous Network Embedding via Deep Architectures 
+--Heterogeneous Network Embedding via Deep Architectures 
 
 Heterogeneous Network Embedding via Deep Architectures KDD'15
 
--Heterogeneous Star Network Embedding
+--Heterogeneous Star Network Embedding
 
 Task-Guided and Path-Augmented Heterogeneous Network Embedding for Author Identification WSDM'17
 
 **Task-specific network embedding**
 
--Semi-supervised Text Representation
+--Semi-supervised Text Representation
 
 PTE: Predictive Tesxt Embedding through Large-scale Heterogeneous Text Network KDD'15
 
--Semi-supervised Classification with Graph Convolutional Networks
+--Semi-supervised Classification with Graph Convolutional Networks
 
 Semi-supervised Classification with Graph Convolutional Networks ICLR'17
 
@@ -68,6 +68,28 @@ Asymmetric transitivity preserving graph embedding KDD'16
 Signed netowrk embedding in social media SDM'17
 
 # Interesting paper about learning representations of Entire networks
+
+**End-to-end method**
+
+--Matrix-based: represent graph as matrice -- affinity matrix
+
+sensitive to node permutations
+
+isomorphic graphs can b maped to differnet matrices
+
+how to find a good intermediate matrix
+
+PATCHY-SAN: Learning Convolutional Neural Networks for Graphs ICML'16
+
+DeepGraph: DeepGraph: Graph Structure Predicts Network Growth
+
+--Sequence-based
+
+DeepCas: an End-to-end Predictor of Information Cascades WWW'17
+
+--Graphical model based: construct graohical model for graphs
+
+Structure2vec: Discriminative Embeddings of Latent Variable Models for Structured Data
 
 # Paper References with the implementation(s)
 
