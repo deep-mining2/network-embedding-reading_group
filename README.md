@@ -14,7 +14,7 @@ Graph Embedding Techniques, Applications, and Performance: A Survey
 
 Representation Learning on Graphs: Methods and Applications
 
-[[arxiv]]https://arxiv.org/pdf/1709.05584v1.pdf
+[[arxiv]](https://arxiv.org/pdf/1709.05584v1.pdf)
 
 # Interesting paper about learning node representations of networks
 
