@@ -6,6 +6,16 @@ The task is to learn the representations of the vertices from a given network.
 
 <img src="http://cherry.cs.nccu.edu.tw/~g10018/portfolio/images/NE.png" width="480">
 
+# Survey
+
+Graph Embedding Techniques, Applications, and Performance: A Survey
+
+[[arxiv]](https://arxiv.org/pdf/1705.02801.pdf)
+
+Representation Learning on Graphs: Methods and Applications
+
+[[arxiv]]https://arxiv.org/pdf/1709.05584v1.pdf
+
 # Interesting paper about learning node representations of networks
 
 **Lapalcian Eigenmap**
