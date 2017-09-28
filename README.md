@@ -312,7 +312,7 @@ Graph Embedding Techniques, Applications, and Performance: A Survey
 
 # To do
 
-**use task supervision**
+**use task supervision loss for vision task**
 
 --completely replace the reconstruction loss computed using the decoder
 
