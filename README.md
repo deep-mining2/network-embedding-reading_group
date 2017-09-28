@@ -309,3 +309,17 @@ Graph Embedding Techniques, Applications, and Performance: A Survey
 **Stanford Network Analysis Project** [website](http://snap.stanford.edu/)
 
 **proNet-core** [github](https://github.com/chihming/proNet-core)
+
+# To do
+
+**use task supervision**
+
+--completely replace the reconstruction loss computed using the decoder
+
+Inductive representation learning on large graph
+
+Semi-supervised classification with graph convolutional network
+
+--or included along the the decoder loss
+
+Revisiting semi-supervised learning with graph embeddings
