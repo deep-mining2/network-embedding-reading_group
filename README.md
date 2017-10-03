@@ -1,6 +1,6 @@
 # network embedding reading_group
 
-[Awesome-network-embedding]https://github.com/kjw0612/awesome-rnn/blob/master/README.md)
+[Awesome-network-embedding](https://github.com/kjw0612/awesome-rnn/blob/master/README.md)
 
 Also called network representation learning, graph embedding, knowledge embedding, etc.
 
