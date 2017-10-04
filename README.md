@@ -4,6 +4,20 @@
 
 ### Related work
 
+VARIATIONAL GRAPH AUTO-ENCODERS [[paper](http://arxiv.org/pdf/1611.07308v1.pdf)]
+
+SEMI-SUPERVISED CLASSIFICATION WITH GRAPH CONVOLUTIONAL NETWORKS [[paper](https://arxiv.org/pdf/1609.02907.pdf)] [[code](https://github.com/tkipf/gcn)]
+
+MODELING RELATIONAL DATA WITH GRAPH CONVOLUTIONAL NETWORKS [[paper](https://arxiv.org/pdf/1703.06103.pdf)]
+
+GRAPH CONVOLUTIONAL MATRIX COMPLETION [[paper](https://arxiv.org/pdf/1706.02263.pdf)]
+
+Revisiting semi-supervised learning with graph embeddings [[paper](http://proceedings.mlr.press/v48/yanga16.pdf)] [[code](https://github.com/kimiyoung/planetoid)]
+
+Column networks for collective classification [[paper](https://arxiv.org/pdf/1609.04508.pdf)] [[code](https://github.com/trangptm/Column_networks)]
+
+Learning Chaotic Dynamics using Tensor Recurrent Neural [[paper](Networkshttps://deepstruct.github.io/ICML17/1stDeepStructWS_paper_14.pdf)]
+
 To address above issue, we leverage rich information of attributes of the node and generate embedding for a node by aggregating information from its local neighborhood.  For example, a social network might have text data (e.g., profile information), or a protein-protein interaction network might have molecular markers associated with each node. In cases where attribute data is not given, these methods can use simple graph statistics as attributes (e.g., node degrees), or assign each node a one-hot indicator vector as an attribute. It works as convolution operation such that it represents a node as a function of its surrounding neighborhood, in a manner similar to the receptive field of a center-surround convolutional kernel in computer vision.
 
 In the encoding phase, the representation for a node is the neighborhood aggregation methods build up in an iterative, or recursive, fashion. First, the node embeddings are initialized to be equal to the input node attributes. Then at each iteration of the encoder algorithm, nodes aggregate the embeddings of their neighbors, using an aggregation function that operates over sets of vectors. After this aggregation, every node is assigned a new embedding, equal to its aggregated neighborhood vector combined with its previous embedding from the last iteration. Finally, this combined embedding is fed through a dense neural network layer and the process repeats. As the process iterates, the node embeddings contain information aggregated from further and further reaches of the graph. However, the dimensionality of the embeddings remains constrained as the process iterates, so the encoder is forced to compress all the neighborhood information into a low dimensional vector. After a number of iterations the process terminates and the final embedding vectors are output as the node representations
