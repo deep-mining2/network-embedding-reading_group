@@ -18,6 +18,18 @@ Column networks for collective classification [[paper](https://arxiv.org/pdf/160
 
 Learning Chaotic Dynamics using Tensor Recurrent Neural [[paper](Networkshttps://deepstruct.github.io/ICML17/1stDeepStructWS_paper_14.pdf)]
 
+Given a graph G(V,E), which X \in R^{N \times D} and representative description of the graph structure in matrix form--adjacency matrix A, a node-level output X \in R^{N \times F}. Every neural network layer can be written as a non-linear function H^{l+1} = f(H^l, A), with H^0=X, H^L=Z
+
+f(H^l,A)=\sigma (A H^l W^l), W^l is the weight matrix for the l-th neural network layer and \sigma() is a non-lear activation fucntion like ReLU. 
+
+Two limitation:
+
+Multiplication with A means that, for every node, we sum up all the feature vectors of all neighboring nodes but not the node itself (unless there are self-loops in the graph). We can "fix" this by enforcing self-loops in the graph: we simply add the identity matrix to A. --> "fix" this by enforcing self-loops in the graph: we simply add the identity matrix to A.
+
+A is typically not normalized and therefore the multiplication with A will completely change the scale of the feature vectors (we can understand that by looking at the eigenvalues of A). --> Normalizing A such that all rows sum to one, i.e. D^{−1} A, where D is the diagonal node degree matrix. Multiplying with D^{−1} A now corresponds to taking the average of neighboring node features.
+
+
+
 To address above issue, we leverage rich information of attributes of the node and generate embedding for a node by aggregating information from its local neighborhood.  For example, a social network might have text data (e.g., profile information), or a protein-protein interaction network might have molecular markers associated with each node. In cases where attribute data is not given, these methods can use simple graph statistics as attributes (e.g., node degrees), or assign each node a one-hot indicator vector as an attribute. It works as convolution operation such that it represents a node as a function of its surrounding neighborhood, in a manner similar to the receptive field of a center-surround convolutional kernel in computer vision.
 
 In the encoding phase, the representation for a node is the neighborhood aggregation methods build up in an iterative, or recursive, fashion. First, the node embeddings are initialized to be equal to the input node attributes. Then at each iteration of the encoder algorithm, nodes aggregate the embeddings of their neighbors, using an aggregation function that operates over sets of vectors. After this aggregation, every node is assigned a new embedding, equal to its aggregated neighborhood vector combined with its previous embedding from the last iteration. Finally, this combined embedding is fed through a dense neural network layer and the process repeats. As the process iterates, the node embeddings contain information aggregated from further and further reaches of the graph. However, the dimensionality of the embeddings remains constrained as the process iterates, so the encoder is forced to compress all the neighborhood information into a low dimensional vector. After a number of iterations the process terminates and the final embedding vectors are output as the node representations
