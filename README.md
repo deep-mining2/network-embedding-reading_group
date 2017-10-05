@@ -28,7 +28,23 @@ Multiplication with A means that, for every node, we sum up all the feature vect
 
 A is typically not normalized and therefore the multiplication with A will completely change the scale of the feature vectors (we can understand that by looking at the eigenvalues of A). --> Normalizing A such that all rows sum to one, i.e. D^{−1} A, where D is the diagonal node degree matrix. Multiplying with D^{−1} A now corresponds to taking the average of neighboring node features.
 
+Then we have f(H^l,A)=\sigma (\hat{D}^{-1/2} \hat{A} \hat{D}^{-1/2} H^l W^l), \hat{A}=A+I
 
+each node is the linear combination of all the other node some how.
+
+For all nodes v_i \in G
+
+-- get feature h_{v_j} of neighbouring nodes {v_j}
+
+-- update node feature h_{v_i} <-- hash(\sum_j h_{v_j}), where hash() is an injective function
+
+In practice, the Weisfeiler-Lehman algorithm assigns a unique set of features for most graphs. This means that every node is assigned a feature that uniquely describes its role in the graph. Exceptions are highly regular graphs like grids, chains, etc. For most irregular graphs, this feature assignment can be used as a check for graph isomorphism (i.e. whether two graphs are identical, up to a permutation of the nodes).
+
+h_{v_i}^{l+1}=\sigma(\sum_j \frac{1}{c_{ij}} h_{v_j}^l W^l), c_{ij} is a normalization constant for edge (v_i, v_j), the symmetrically normalized adjacency matrix is used.
+
+We now see that this propagation rule can be interpreted as a differentiable and parameterized (with W(l)W(l)) variant of the hash function used in the original Weisfeiler-Lehman algorithm.
+
+we make the remarkable observation that we get meaningful smooth embeddings where we can interpret distance as (dis-)similarity of local graph structures.
 
 To address above issue, we leverage rich information of attributes of the node and generate embedding for a node by aggregating information from its local neighborhood.  For example, a social network might have text data (e.g., profile information), or a protein-protein interaction network might have molecular markers associated with each node. In cases where attribute data is not given, these methods can use simple graph statistics as attributes (e.g., node degrees), or assign each node a one-hot indicator vector as an attribute. It works as convolution operation such that it represents a node as a function of its surrounding neighborhood, in a manner similar to the receptive field of a center-surround convolutional kernel in computer vision.
 
